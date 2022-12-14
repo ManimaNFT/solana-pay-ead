@@ -66,7 +66,7 @@ const App: FC<AppProps> & { getInitialProps(appContext: AppContext): Promise<App
         <ThemeProvider>
             <FullscreenProvider>
                 {recipient && label ? (
-                    <ConnectionProvider endpoint={MAINNET_ENDPOINT}>
+                    <ConnectionProvider endpoint={DEVNET_ENDPOINT}>
                         <WalletProvider wallets={wallets} autoConnect={connectWallet}>
                             <WalletModalProvider>
                                 <ConfigProvider
