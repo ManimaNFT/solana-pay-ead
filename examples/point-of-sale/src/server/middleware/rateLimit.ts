@@ -7,7 +7,7 @@ export const rateLimit = wrapExpressHandler(
     expressRateLimit({
         keyGenerator: (req) =>
             (req.headers['x-real-ip'] as string | undefined) ?? req.socket.remoteAddress ?? 'UNKNOWN',
-        max: RATE_LIMIT ?? 5,
-        windowMs: RATE_LIMIT_INTERVAL ?? 60,
+        max: RATE_LIMIT ?? 10,
+        windowMs: RATE_LIMIT_INTERVAL ?? 1200,
     })
 );
