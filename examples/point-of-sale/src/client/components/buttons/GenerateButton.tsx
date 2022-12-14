@@ -12,7 +12,7 @@ export const GenerateButton: FC = () => {
             onClick={generate}
             disabled={!amount || amount.isLessThanOrEqualTo(0)}
         >
-            Generate Payment Code
+            Generar código de pago
         </button>
     );
 };
