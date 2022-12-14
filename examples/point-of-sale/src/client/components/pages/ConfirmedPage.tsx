@@ -13,7 +13,7 @@ const ConfirmedPage: NextPage = () => {
     return (
         <div className={css.root}>
             <div className={css.header}>
-                <BackButton onClick={reset}>Start Over</BackButton>
+                <BackButton onClick={reset}>Al Inicio</BackButton>
                 <TransactionsLink />
             </div>
             <div className={css.main}>
