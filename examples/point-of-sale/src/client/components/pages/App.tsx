@@ -17,6 +17,7 @@ import { SOLIcon } from '../images/SOLIcon';
 import css from './App.module.css';
 import { MAINNET_ENDPOINT, MAINNET_EURC_MINT } from '../../utils/constants';
 //import { EURCIcon } from '../images/EURCIcon';
+import { USDCIcon } from '../images/USDCIcon';
 
 interface AppProps extends NextAppProps {
     host: string;
