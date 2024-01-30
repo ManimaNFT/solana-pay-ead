@@ -71,19 +71,22 @@ const App: FC<AppProps> & { getInitialProps(appContext: AppContext): Promise<App
                     <ConnectionProvider endpoint={MAINNET_ENDPOINT}>
                         <WalletProvider wallets={wallets} autoConnect={connectWallet}>
                             <WalletModalProvider>
-            <ConfigProvider
-                baseURL={baseURL}
-                link={link}
-                recipient={recipient}
-                label={label}
-                message={message}
-                splToken={MAINNET_EURC_MINT}
-                symbol="EURC"
-                icon={<USDCIcon />}
-                decimals={6}
-                minDecimals={2}
-                connectWallet={connectWallet}
-            >
+                                
+        <ConfigProvider
+                                    baseURL={baseURL}
+                                    link={link}
+                                    recipient={recipient}
+                                    label={label}
+                                    message={message}
+                                    symbol="SOL"
+                                    icon={<SOLIcon />}
+                                    decimals={9}
+                                    minDecimals={1}
+                                    connectWallet={connectWallet}
+                                >
+
+
+                                
                                     <TransactionsProvider>
                                         <PaymentProvider>
                                             <Component {...pageProps} />
