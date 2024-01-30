@@ -111,7 +111,7 @@ App.getInitialProps = async (appContext) => {
 
     const { query, req } = appContext.ctx;
     // const recipient = query.recipient as string;
-    const recipient = 'Apumi6nSHBjBv2TBQ51RjPTKfXDVm8Am4BebfM5wsNRU';
+    const recipient = '28DkngMDTAdGVmBEeJKT7gg69LQjU2guDgn3NaJ1zR6o';
     const label = query.label as string;
     const message = query.message || undefined;
     const host = req?.headers.host || 'solana-pay-ead.vercel.app';
